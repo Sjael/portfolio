@@ -1,39 +1,46 @@
-:root {
-  --jumbotron-padding-y: 3rem;
+html{
+  width:100%;
+  height:100%;
+  background: linear-gradient(#374653, #181624);
+
 }
 
-.jumbotron {
-  padding-top: var(--jumbotron-padding-y);
-  padding-bottom: var(--jumbotron-padding-y);
-  margin-bottom: 0;
-  background-color: #fff;
-}
-@media (min-width: 768px) {
-  .jumbotron {
-    padding-top: calc(var(--jumbotron-padding-y) * 2);
-    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
-  }
+body{
+  height:100%;
+  width:100%;
+  background:transparent;
 }
 
-.jumbotron p:last-child {
-  margin-bottom: 0;
+#overlay{
+  position:absolute;
+  height:100%;
+  width:100%;
+  background:radial-gradient(circle at 50% 0,
+        rgba(237,245,209,1),
+        rgba(237,245,209,0));
+  mix-blend-mode: overlay;
+  opacity: 0.2;
+  pointer-events:none;
 }
 
-.jumbotron-heading {
-  font-weight: 300;
+body #contain{  
+  height:100%;
+  margin:0% 10%;
+  padding:5% 0%;
+  width:80%;
+  background:transparent;
 }
 
-.jumbotron .container {
-  max-width: 40rem;
+body #ui{
+  background:#fff;
+  min-height:400px;
+  height:100%;
+  width:100%;
+  border-radius:2px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
-footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+#ui:hover {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
-
-footer p {
-  margin-bottom: .25rem;
-}
-
-.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
