@@ -199,7 +199,7 @@ body #ui{
 
 #center{  
   flex-grow:1;
-  background:#f0f0f4; 
+  background:#eeeef2; 
   overflow-y:hidden;  
   position:relative;
   padding-bottom:82px;
@@ -214,13 +214,13 @@ body #ui{
 }
 
 #work .row > div{
-  padding:20px 20px 30px;
+  padding:40px 20px;
   border-bottom:1px #ccc solid;
 }
 
 #work .row > div:first-child{
   text-align:center;
-  padding:60px 0px;
+  padding:80px 0px;
 }
 
 
@@ -246,7 +246,7 @@ body #ui{
 }
 
 .pieceHold img:hover{  
-  -webkit-filter: brightness(120%);
+  -webkit-filter: brightness(115%);
 }
 
 .main{
@@ -262,6 +262,9 @@ body #ui{
   border-radius:2px;
 }
 
+.side2{
+  flex:60;
+} 
 .side3{
   flex:40;
 }
@@ -288,7 +291,7 @@ body #ui{
 .sideHold:before{
   content: "";
   position: absolute;
-  background: white;
+  background: #fff;
   height: 100%;
   width: 1px;
   z-index:2;  
@@ -297,10 +300,18 @@ body #ui{
 .sideHold:not(:last-child):after {
   content: "";
   position: absolute;
-  background: white;
+  background: #fff;
   width: 100%;
   height: 1px;
   z-index:2;
+}
+
+.dark .sideHold:before{
+  background:#bbb;
+}
+
+.dark .sideHold:not(:last-child):after{  
+  background: #bbb;
 }
 
 /*
@@ -323,8 +334,9 @@ body #ui{
 #work img{
 }
 
+
 #work .row h4{
-  margin:10px 0px 5px;
+  margin:0px 0px 5px;
   font-size:20px;
   font-weight: bold;
 }
@@ -341,7 +353,7 @@ body #ui{
   bottom:0;
   left:0;
   right:0;
-  background:#f0f0f4; 
+  background:#eeeef2; 
 }
 
 #chat{
