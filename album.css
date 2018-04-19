@@ -468,10 +468,4 @@ body #ui{
   border-radius:5px;
 }
 
-#contactModal .modal-dialog{
-  min-width:500px;
-}
 
-#contactModal textarea{
-  min-height:200px;
-}
