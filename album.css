@@ -131,6 +131,7 @@ body #contain{
   list-style-type: none;
   padding-left:0px;
   margin:0;
+  display:inline-block;
 }
 
 #skillHold li{
@@ -146,7 +147,7 @@ body #contain{
   color: rgba(255, 255, 255, 0.75);
 }
 
-#skillHold li img{
+#skillHold img{
   width:18px;
   height:18px;
   margin-right:8px;
@@ -530,6 +531,14 @@ body #contain{
   #skillHold{
     padding-top:0px;
     text-align: center;
+  }
+
+  #skillHold ul{
+    padding:0px 4px;
+  }
+
+  #skillHold img{
+    margin:4px 4px;
   }
 
   #skillHold p{
