@@ -15,6 +15,11 @@ $(document).ready(function(){
                         
 	});
 
+	$("#vidModal").on('hide.bs.modal', function(){
+        $("#ytplayer").attr('src', '');
+        $("#ytplayer").attr('src', 'https://www.youtube.com/embed/bFeMC1E_nmA');        
+    });
+
 	$('#chat').click(function(){
 		$('#contactModal').modal('show');
 	});
