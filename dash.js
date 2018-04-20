@@ -1,6 +1,3 @@
-var element = document.getElementById("work");
-element.scrollTop = element.scrollHeight;
-
 $(document).ready(function(){
 // Handles expanding an image
 	$('#work').find($('img')).click(function(){
@@ -22,3 +19,12 @@ $(document).ready(function(){
 		$('#contactModal').modal('show');
 	});
 });
+
+function loaded(){
+  console.log("loaded");
+  //remove loader 
+  //scroll to bottom of portfolio
+  var element = document.getElementById("work");
+  element.scrollTop = element.scrollHeight;
+  $('#loader').toggleClass("loaded");
+};
