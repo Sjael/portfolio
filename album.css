@@ -1,7 +1,6 @@
 html{
   width:100%;
   height:100%;   
-  background-color: #05eaa0;
   background-image: linear-gradient(315deg, #993269 0%, #e82a5c 50%, #e85f5f 99%);
 }
 
@@ -53,21 +52,7 @@ body #contain{
   background:transparent;
 }
 
-@media (max-width: 1439.98px) {
-  body #contain{     
-    margin:0% 10%;
-    width:80%;
-  }
-}
-
-@media (max-width: 991.98px) {
-  body #contain{     
-    margin:0% 5%;
-    width:90%;
-  }
-}
-
-body #ui{
+#ui{
   background:#252529;
   min-height:400px;
   height:100%;
@@ -78,31 +63,7 @@ body #ui{
   border-radius:3px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-}
-
-#ui:hover {
-  /*
-  box-shadow: 
-    0 14px 28px rgba(0,0,0,0.25), 
-    0 10px 10px rgba(0,0,0,0.22),
-    inset 0 32px 30px -30px rgba(255, 248, 235, 0.5);
-  box-shadow: 
-    0 19px 38px rgba(0,0,0,0.30), 
-    0 15px 12px rgba(0,0,0,0.22); 
-  box-shadow: 
-    0 100px 60px -80px rgba(0,0,0,0.45), 
-    0 4px 8px rgba(0,0,0,0.1), 
-    inset 0 8px 6px -6px rgba(255, 248, 235, 0.25),
-    inset 0 -2px 2px -2px rgba(0, 0, 0, 0.1)
-  background: linear-gradient(#3a4a5a, #1f1e28);
-  background-image: linear-gradient(315deg, #007cae 0%, #05eaa0 99%);
-  */
-
-}
-
-#ui > div{
-  flex-direction: column;
-  height:100%;
+  flex-direction: row;
 }
 
 #header{
@@ -114,13 +75,28 @@ body #ui{
   position:relative;
 }
 
-#header #icon{
+#headHold{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction:column;
+  height:100%;
+}
+
+#iconHold{
+  margin:auto;
+}
+
+#icon{
   height:64px;
   width:64px;
   vertical-align: middle;
   margin:auto;
   display:block;
   margin-bottom:12px;
+}
+
+#nameHold{
+
 }
 
 #name{
@@ -138,12 +114,10 @@ body #ui{
   margin: 12px auto;
 }
 
-#name span{
-  font-weight: 400;
-}
-
 #skillHold{
-  margin:50px auto auto;
+  padding-top:50px;
+  flex:1;
+  margin:auto;
 }
 
 #skillHold h4{
@@ -156,6 +130,7 @@ body #ui{
 #skillHold ul{
   list-style-type: none;
   padding-left:0px;
+  margin:0;
 }
 
 #skillHold li{
@@ -164,7 +139,7 @@ body #ui{
   display:inline-block;
 }
 
-#skillHold li p{
+#skillHold p{
   font-size:12px;
   vertical-align: middle;
   display:inline;
@@ -177,23 +152,27 @@ body #ui{
   margin-right:8px;
 }
 
-#header #social{
-  position:absolute;
-  bottom:0;
-  left:0;
-  right:0;
+#socHold{
   text-align:center;
-  padding:20px;
 }
 
-#social i{
+#socFlex{
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  height:100%;
+}
+
+#socHold i{
   color:#fff;
   opacity:0.5;
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  margin:10px 15px;
+  margin:0px 20px;  
+  justify-content: center;
+  text-align: center;
 }
 
-#social i:hover{
+#socHold i:hover{
   opacity:1;
 }
 
@@ -203,11 +182,11 @@ body #ui{
   overflow-y:hidden;  
   position:relative;
   padding-bottom:82px;
-  border-radius:0px 3px 3px 0px;
+  border-radius:0px 3px 3px 0px;  
 }
 
+
 #work{
-  flex-grow:1;
   overflow-y:scroll; 
   padding:40px 20px 0px 20px;
   height:100%;
@@ -493,6 +472,70 @@ body #ui{
 #imgModal img{
   border-radius:5px;
 }
+
+/* media queries */
+
+@media (max-width: 1439.98px) {
+  body #contain{     
+    margin:0% 10%;
+    width:80%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  body #contain{     
+    margin:0% 5%;
+    width:90%;
+  }
+}
+
+
+@media (max-width: 767.98px) {  
+  #ui{
+    flex-direction: column;
+  }
+
+  #header{
+    padding:0px 10px;
+  }
+
+  #headHold > div{
+    padding:0px 10px;
+  }
+
+  #center{
+    height:800px;
+  }
+
+  #header{
+    width:100%;
+    height:200px;
+  }
+
+  #headHold{
+    flex-direction:row;
+  }
+
+  #skillHold{
+    padding-top:0px;
+  }
+
+  #skillHold p{
+    display:none;
+  }
+
+  #socFlex{
+    flex-direction:column;
+  }
+
+  #socHold i{
+    margin:15px 0;
+  }
+
+  
+
+}
+
 
 
 
