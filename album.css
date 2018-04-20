@@ -333,6 +333,32 @@ body #ui{
   background: #bbb;
 }
 
+.vidHold{
+  position:relative;
+  text-align: center;
+}
+
+.vidHold i {
+  color:#222;
+  position:absolute;
+  top: 50%;
+  font-size:100px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translateY(-50%, -50%);
+  text-align:center;
+  vertical-align:middle;
+  z-index:4;
+  text-shadow: 3px 3px 16px rgba(0,0,0,0,4);
+  pointer-events:none;
+  opacity:0.6;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+}
+
+.vidHold:hover i{
+  opacity:0.9;
+}
+
 /*
 .main:not(:last-child){  
   border-right:1px #ddd solid;
@@ -443,7 +469,7 @@ body #ui{
 }
 
 .modal-backdrop.show {
-    opacity: .8;
+    opacity: .85;
 }
 
 #imgModal .modal-dialog{

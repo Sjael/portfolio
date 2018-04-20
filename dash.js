@@ -6,7 +6,7 @@ $(document).ready(function(){
 	$('#work').find($('img')).click(function(){
 	  console.log(this);
 	  if ($(this).hasClass("vid")){
-	  	//$('#vidModal').find($('#ytplayer'))[0].src = "https://www.youtube.com/embed/" + $(this).attr("data-id") + "?autoplay=0";
+	  	//$('#vidModal').find($('#ytplayer'))[0].src = "https://www.youtube.com/embed/" + $(this).attr("data-id") + "";
 		$('#vidModal').modal('show');	  	
 	  }
 	  else{
