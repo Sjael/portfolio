@@ -177,19 +177,26 @@ body #contain{
   opacity:1;
 }
 
+.home #center{  
+  padding-bottom:82px;
+}
+
 #center{  
   flex-grow:1;
   background:#eeeef2; 
   overflow-y:hidden;  
   position:relative;
-  padding-bottom:82px;
   border-radius:0px 3px 3px 0px;  
 }
 
 
 .home #work{
-  overflow-y:scroll; 
   padding:40px 20px 0px 20px;
+}
+
+#work{
+  overflow-y:scroll; 
+  padding:40px 20px;
   height:100%;
 }
 
@@ -666,3 +673,15 @@ body #contain{
   }
 }
 
+.blog #work h1{
+  font-size:42px;
+  font-weight:600;
+}
+
+.blog #work p{
+  font-size:20px;
+}
+
+.blog #work img{
+
+}
