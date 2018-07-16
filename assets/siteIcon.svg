@@ -10,7 +10,7 @@
 		<linearGradient id="linear-gradient" x1="56.31" y1="172.3" x2="198.88" y2="250.83" xlink:href="#New_Gradient_Swatch_6"/>
 	</defs>
 	<title>siteIcon</title>
-	<rect width="251.33" height="251.33" fill="#37445c"/>
+	<rect width="251.33" height="251.33" fill="#37373f"/>
 	<path d="M196.46,246.15H57c-9.81,0-17.76-11.29-17.76-21.11L85.47,94.88c.78-2.75,3.75-5.17,8.37-5.17h65.75A8.76,8.76,0,0,1,168,94.88L214.23,225C214.23,234.86,206.27,246.15,196.46,246.15Z" fill="#bcc0cf" stroke="#283247" stroke-miterlimit="10" stroke-width="4"/>
 	<rect x="104.78" y="64.16" width="43.87" height="34.98" fill="#bcc0cf"/>
 	<path d="M139,54.93H114.62c-5.2,0-9.41-3.35-9.41-7.48l-2.7-36a6.63,6.63,0,0,1,6.63-6.63h35.31a6.63,6.63,0,0,1,6.64,6.63l-2.71,36C148.38,51.58,144.17,54.93,139,54.93Z" fill="#ad7165" stroke="#283247" stroke-miterlimit="10" stroke-width="4"/>

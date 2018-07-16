@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/assets/favicon.ico">
+
+    <title>Jake O'Brien</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="../album.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Open+Sans:400,700|Roboto:400,500,700|Lato:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+
+  </head>
+
+  <body onLoad="loaded()">
+    <div id="overlay"></div>
+    
+    <div id="contain">
+      <div id="ui">
+
+        <div id="header">
+          <div id="headHold">
+            <div id="iconHold">
+              <a href="https://jakecobrien.com">
+                <img id="icon" src="../assets/siteIcon.svg" onerror="this.onerror=null; this.src='/assets/icon.png'">         
+                <h3 id="name">Jake O'Brien</h3>
+              </a>
+              <h6 id="tag">Graphic Design | UI/UX | Web Dev</h6>
+            </div>
+              
+            <div id="skillHold">
+              <h4>TOOLS</h4>
+              <ul>
+                <li>
+                  <img src="../assets/photoshop.png">
+                  <p>Photoshop</p>
+                </li>
+                <li>
+                  <img src="../assets/aftereffects.png">
+                  <p>After Effects</p>
+                </li>
+                <li>
+                  <img src="../assets/illustrator.png">
+                  <p>Illustrator</p>
+                </li>
+                <li>
+                  <img src="../assets/premiere.png">
+                  <p>Premiere</p>
+                </li>
+                <li>
+                  <img src="../assets/cinema4d.png">
+                  <p>Cinema 4D</p>
+                </li>
+              </ul>
+            </div>
+            <div id="socHold">
+              <div id="socFlex">
+                <a href="https://twitter.com/JakeCantStop" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/Sjael" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://behance.net/jakeobrien3639" target="_blank"><i class="fab fa-behance"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div id="center" class="blog">
+          
+          <div id="work">
+            <div class="container">
+              <div class="row">
+
+                <div class="col-md-12">
+                  <h1>Crafting captivating thumbnails</h1>
+                  <p>
+                    "Everyone knows that in order to get view on YouTube, you need to make thumbnails that jump out at the user." Yeah, I might have taken that a bit literally, as these thumbnails are actually trying to pop off the page.
+                  </p>
+                  <p>
+                    Being avid gamers, we already had an idea of where to go with this, and first thought to emulate the ever-popular Twitch in their layout of Sidebar-Content-Chat. Evasyst is a startup in LA that I worked with, designing their application UI. It's basically screensharing for video games for increased gameplay coordination. 
+                  </p>
+                  <img class="img-fluid" src="3d1.png" >  
+                  <p>
+                    It's basically screensharing for video games for increased gameplay coordination. Being avid gamers, we already had an idea of where to go with this, and first thought to emulate the ever-popular Twitch in their layout of Sidebar-Content-Chat. Evasyst is a startup in LA that I worked with, designing their application UI. 
+                  </p>
+                </div>   
+
+              </div>
+            </div>            
+          </div>
+
+          
+        </div>
+
+      </div>
+    </div>
+
+    <div class="modal fade" id="imgModal" tabindex="-1" role="dialog" aria-labelledby="imgModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <h3 class="modal-title" id="title">Modal title</h3>
+        <div class="modal-content">
+          <div class="modal-body">
+            <img class="img-fluid" src="#" alt="placeholder">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="vidModal" tabindex="-1" role="dialog" aria-labelledby="vidModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe id="ytplayer" class="embed-responsive-item" type="text/html" src="https://www.youtube.com/embed/bFeMC1E_nmA" frameborder="0"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfCx9cvy30cVeKZPu9865isdjVlmWTCIpglmjPK3EVjAdjvCA/viewform?embedded=true" width="560" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+          </div>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>   
+    <script type="text/javascript" src="../dash.js"></script>
+
+  </body>
+</html>
