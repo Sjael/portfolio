@@ -11,9 +11,14 @@ body{
   overflow-y:hidden; 
 }
 
-h1,h2,h3,h4,h5,h6,p,li{  
+.home h1,h2,h3,h4,h5,h6,p,li{  
   font-family: 'Open Sans', sans-serif;
 }
+
+h1,h2,h3,h4,h5,h6,p,li{  
+  color:rgba(0, 0, 0, 0.85);
+}
+
 
 ::-webkit-scrollbar {
     width: 20px;
@@ -46,9 +51,9 @@ h1,h2,h3,h4,h5,h6,p,li{
 
 body #contain{  
   height:100%;
-  margin:0% 15%;
+  margin:0% 20%;
   padding:4% 0%;
-  width:70%;
+  width:60%;
   background:transparent;
 }
 
@@ -177,7 +182,7 @@ body #contain{
   opacity:1;
 }
 
-.home #center{  
+.home#center{  
   padding-bottom:82px;
 }
 
