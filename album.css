@@ -126,17 +126,32 @@ body #contain{
   margin: 12px auto;
 }
 
+#navHold{
+  padding-top:40px;
+}
+
 #skillHold{
-  padding-top:50px;
+  padding-top:40px;
   flex:1;
   margin:auto;
+}
+
+#navHold h3, #navHold i{
+  font-size:16px;
+  font-weight:bold;
+  color: rgba(255, 255, 255, 0.5);
+  margin:0;
+}
+
+#navHold i{
+  margin-right:8px;
 }
 
 #skillHold h4{
   font-size:12px;
   font-weight:bold;
   margin-bottom:8px;
-  color: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 #skillHold ul{
@@ -146,10 +161,32 @@ body #contain{
   display:inline-block;
 }
 
+#navHold ul{
+  list-style-type: none;
+  padding-left:0px;
+  margin:0;
+}
+
 #skillHold li{
   margin-bottom:10px;
   vertical-align: middle;
   display:inline-block;
+}
+
+#navHold li{
+  padding:10px 15px;
+  margin:0px -15px 2px;
+  vertical-align: middle;
+}
+
+#navHold li:hover, #navHold li.paged{
+  background-color:rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+#navHold li:hover *, #navHold li.paged *{
+  color:rgba(255, 255, 255, 0.9);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 #skillHold p{
@@ -185,7 +222,7 @@ body #contain{
   text-align: center;
 }
 
-#socHold i:hover{
+#socHold a:hover i{
   opacity:1;
 }
 
@@ -207,7 +244,7 @@ body #contain{
 }
 
 .blog #work{
-  padding:60px 50px;
+  padding:60px 80px;
 }
 
 #work{
@@ -219,6 +256,10 @@ body #contain{
 .home #work .row > div{
   padding:50px 40px;
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.home.bloglist #work .row > div{
+  padding:40px;
 }
 
 .home #work .row > div:hover{
@@ -280,6 +321,9 @@ body #contain{
   position:relative;
 }
 
+.side1{
+  flex:120;
+} 
 .side2{
   flex:60;
 } 
@@ -380,11 +424,11 @@ body #contain{
 }*/
 
 .sideHold:last-child img{
-  border-radius: 0px 0px 2px 0px;
+  border-top-right-radius: 2px;
 }
 
 .sideHold:first-child img{
-  border-radius: 0px 2px 0px 0px;
+  border-bottom-right-radius:2px;
 }
 
 .side:not(:last-child) .sideHold:first-child img{
@@ -403,6 +447,9 @@ body #contain{
   font-weight: 900;
   font-family: 'Lato', sans-serif;
   transition: all 0.1s ease-in-out;
+}
+
+.bloglist #work .row h4{
   cursor:pointer;
 }
 
@@ -574,9 +621,11 @@ body #contain{
     flex-direction:row;
   }
 
-  #skillHold{
+  #skillHold, #navHold{
     padding-top:0px;
     text-align: center;
+    flex:1;
+    margin:auto;
   }
 
   #skillHold ul{
@@ -719,6 +768,12 @@ body #contain{
   margin-top:10px;
 }
 
+.blog #work h5{
+  font-size:11px;
+  font-family:'Lato', sans-serif;
+  font-weight:400;
+}
+
 .blog #work p{
   font-size:18px;
   line-height:1.6;
@@ -729,6 +784,30 @@ body #contain{
   margin-top:20px;
 }
 
-.blog #work img{
+.blog #work ol, .blog #work ul{
+  margin-top:30px;
+  padding-left:10px;
+}
+
+.blog #work ul{
+  list-style-type: none;
+}
+
+.blog #work ul li:before{
+  padding-top: 4px;
+  padding-right: 15px;
+  content: '\2022';
+}
+
+.blog #work li{
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+.blog #work li:not(:last-child){  
+  margin-bottom: 14px;
+}
+
+.blog #work .img-fluid, .blog #work .pieceHold{
   margin-top:45px;
 }
