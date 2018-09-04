@@ -603,8 +603,16 @@ body #contain{
     border-radius: 3px 3px 0px 0px;
   }
 
-  #headHold > div{
+  #iconHold{
     padding:0px 10px;
+  }
+
+  #navHold{
+    padding:0px 30px;
+  }
+
+  #skillHold{
+    display:none;
   }
 
   #center{
@@ -642,6 +650,7 @@ body #contain{
 
   #socFlex{
     flex-direction:column;
+    padding:0px 10px;
   }
 
   #socHold i{
