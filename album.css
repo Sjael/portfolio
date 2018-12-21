@@ -109,7 +109,14 @@ body #contain{
   text-align: center;
   font-size: 16px;
   font-weight: bold;
-  margin:auto;
+  margin:auto;/*
+  margin:0px 10px 5px;
+  padding:2px;
+  background-color:#e85f5f;*/
+}
+
+#name span{
+
 }
 
 #tag{
@@ -506,6 +513,10 @@ body #contain{
   transform: scale(1);
   opacity: 1;
   transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.modal.fade.show .modal-content{
+  background-color:transparent;
 }
 
 .modal:before {
